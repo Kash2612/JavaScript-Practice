@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <script src="https://cdn.tailw indcss.com"></script>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #344151;
+        gap: 10;
+
+    }
+
+    .incdec{
+        font-size: medium;
+        color: #0398d4;
+        font-size: 20px;
+    }
+
+    .wrapper{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        color: #344151;
+        width: 100px;
+                
+        gap: 12;
+        padding: 3px;
+    }
+
+    .dec{
+        border-left: 2px;
+        border-color: #b71e1e;
+        padding-right: 5px;
+        width: 20px;
+
+    }
+
+    .counter{
+        font-weight: bold;
+        width: 60px;
+        text-align: center;
+        border-left: 2px;
+    }
+
+    .inc{
+        border-left: 2px;
+        border-color: #bfbfbf;
+        padding-left: 5px;
+        width: 20px;
+    }
+
+
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="incdec">
+            Increment and Decrement
+        </div>
+
+        <div class="wrapper">
+            <button class="dec" onclick="decrement()" >
+                <i class="fa-solid fa-minus"></i>
+
+            </button>
+            <div id="counter" class="counter" > 
+                0
+            </div>
+            <button onclick="increment()" class="inc">
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+        </div>
+     </div>
+
+     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+     <script src="counter.js"></script>
+
+</body>
+</html>
